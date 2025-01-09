@@ -168,7 +168,9 @@ const index = ({ openModal, setOpenModal }) => {
               <Tag key={index}>{tag}</Tag>
             ))}
           </Tags>
-          <Desc>{product?.description}</Desc>
+          <Desc>{product?.description1}</Desc>
+          <Desc>{product?.description2}</Desc>
+          <Desc>{product?.description3}</Desc>
           <ButtonGroup>
             <Button href={product?.buyLink} target="new">Buy Now</Button>
             <Button dull href={product?.detailsLink} target="new">View Details</Button>

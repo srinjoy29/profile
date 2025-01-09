@@ -581,6 +581,7 @@ export const products =[
     detailsLink: "https://docs.google.com/document/d/e/2PACX-1vSXtaEVhFO3n3fNXjbHuLTNhMiLFec5Auxzq0dq-p_HuGLGQIyCecDjcHBzbU79Ph8jltC5nSNp1jk0/pub"
   },
   {
+<<<<<<< HEAD
     name: "Top 20 React.Js Interview Questions",
     price: "5",
     
@@ -592,6 +593,18 @@ export const products =[
     buyLink: "https://topmate.io/srinjoy_das/1386493",
     category: "development",
     detailsLink: "https://drive.google.com/uc?export=download&id=181octQNYuO0GK5AFsFRj0SFVg-IGbzCy"
+=======
+    "name": "Top 20 React.Js Interview Questions",
+    "price": "3",
+    
+    "description1": "Top 20 Questions - Details Link || Top 50+ Questions - Buy link",
+    
+    "tags": ["React Js", "Interview Questions", "Top-Questions"],
+    "image": "https://i.ytimg.com/vi/WvtGAoI95bQ/maxresdefault.jpg",
+    "buyLink": "https://topmate.io/srinjoy_das/1386493",
+    "category": "development",
+    "detailsLink": "https://topmate.io/srinjoy_das/1386493"
+>>>>>>> 35fe043cb395f2a94d2416f0dcc6f4c74104e848
   },
   {
     name: "Top Oops Interview Questions",

@@ -18,6 +18,23 @@ export const HeroContainer = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
 
+export const BookCallButton = styled.a`
+    background-color: #f4a261;
+    color: white;
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #e76f51;
+    }
+`;
+
 export const HeroBg = styled.div`
   position: absolute;
   display: flex;

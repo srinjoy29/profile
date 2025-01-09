@@ -28,11 +28,8 @@ const Wrapper = styled.div`
 
 
 const Home = ({ openModal, setOpenModal }) => {
-  
   return (
-    
     <Body>
-    
       <HeroSection />
       <Wrapper>
         <Skills />
@@ -45,12 +42,15 @@ const Home = ({ openModal, setOpenModal }) => {
         <Contact />
       </Wrapper>
       <Footer />
+      
+      {/* Conditional Rendering Based on Modal Type */}
       {openModal.state && (
-        <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />,
-        <ProductDetails openModal={openModal} setOpenModal={setOpenModal} />
+        <ProjectDetails openModal={openModal} setOpenModal={setOpenModal}/>
       )}
+      {/* {openModal.state && openModal.type === 'product' && (
+        <ProductDetails openModal={openModal} setOpenModal={setOpenModal} />
+      )} */}
     </Body>
-    
   );
 };
 

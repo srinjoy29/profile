@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for redirection
 import { Container, Wrapper, Title, Desc, CardContainer, ToggleButtonGroup, ToggleButton, Divider, SeeMoreButton } from './ProductsStyle';
-import ProductCard from '../Cards/ProductCards';
+import FeatureProdCards from '../Cards/FeatureProdCards';
 import { products } from '../../data/constants';
 
-const Products = ({ openModal, setOpenModal }) => {
+const Products = () => {
   const [toggle, setToggle] = useState('all');
   const navigate = useNavigate(); // Initialize useNavigate
 
@@ -16,42 +16,53 @@ const Products = ({ openModal, setOpenModal }) => {
     navigate('/products'); // Redirect to /products for more products
   };
 
+  const handleCardClick = (product) => {
+    navigate(`/products`, { state: { product } }); // Redirect to product page with product id and details
+  };
+
   return (
     <Container id="products">
       <Wrapper>
         <Title>Featured Materials</Title>
         <Desc>
-        Comprehensive resources to help you prepare for technical interviews, including coding problems, system design concepts, and behavioral questions. Tailored for roles in software engineering and full-stack development.
+          Comprehensive resources to help you prepare for technical interviews, including coding problems, system design concepts, and behavioral questions. Tailored for roles in software engineering and full-stack development.
         </Desc>
         <ToggleButtonGroup>
           {/* Toggle button for 'All' */}
-          {toggle === 'all' ? 
-            <ToggleButton active value="all" onClick={() => setToggle('all')}>All</ToggleButton> 
-            : 
-            <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
-          }
+          <ToggleButton 
+            active={toggle === 'all'} 
+            onClick={() => setToggle('all')}
+          >
+            All
+          </ToggleButton>
           <Divider />
           
           {/* Toggle button for 'DSA' */}
-          {toggle === 'dsa' ? 
-            <ToggleButton active value="dsa" onClick={() => setToggle('dsa')}>DSA</ToggleButton>
-            : 
-            <ToggleButton value="dsa" onClick={() => setToggle('dsa')}>DSA</ToggleButton>
-          }
+          <ToggleButton 
+            active={toggle === 'dsa'} 
+            onClick={() => setToggle('dsa')}
+          >
+            DSA
+          </ToggleButton>
           <Divider />
           
           {/* Toggle button for 'Development' */}
-          {toggle === 'development' ? 
-            <ToggleButton active value="development" onClick={() => setToggle('development')}>Development</ToggleButton> 
-            : 
-            <ToggleButton value="development" onClick={() => setToggle('development')}>Development</ToggleButton>
-          }
+          <ToggleButton 
+            active={toggle === 'development'} 
+            onClick={() => setToggle('development')}
+          >
+            Development
+          </ToggleButton>
         </ToggleButtonGroup>
 
         <CardContainer>
           {/* Display up to 3 Products */}
           {filteredProducts.slice(0, 3).map((product) => (
-            <ProductCard key={product.id} product={product} openModal={openModal} setOpenModal={setOpenModal} />
+            <FeatureProdCards 
+              key={product.id} 
+              product={product} 
+              onClick={() => handleCardClick(product)} // Pass click handler
+            />
           ))}
         </CardContainer>
 
