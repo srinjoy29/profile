@@ -3,17 +3,19 @@ export const Bio = {
   roles: [
     "Mern Stack Developer",
     "Web Developer",
-    "UI/UX Designer",
+    "Full Stack Developer",
     "Programmer",
   ],
-  Description:
-  "I'm Srinjoy Das, a final-year Computer Science student at Haldia Institute of Technology specializing in web development and software engineering. With expertise in ReactJS, NodeJS, ExpressJS, MongoDB, and NextJS, I've built impactful projects like AI-driven image editors and booking platforms. Explore my portfolio to see my work and passion for digital solutions. Welcome!",
+  Description1:"Final-year Computer Science student at Haldia Institute of Technology and a freelance web developer specializing in modern web technologies like ReactJS, NodeJS, ExpressJS, MongoDB, and NextJS. ",
+  Description2:"🚀 Hiring? 💼 Have a project?",
+ 
   Contactinfo:
   "Email : srinjoydas0212@gmail.com",
   
   github: "https://github.com/srinjoy29",
+  call:"https://topmate.io/srinjoy_das/1387297",
   resume:
-    "https://drive.google.com/file/d/1VKZ6f7245yjLEmS-4SfmVBXzCyUqve1K/view?usp=sharing",
+    "https://drive.google.com/file/d/15Nvdx-5H6VFPi_yxiccnL75vTUWeuhyS/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/srinjoy-das-589a95206/",
   twitter: "https://twitter.com/SrinjoyDas47936",
   insta: "https://www.instagram.com/srinjoyhere/",
@@ -262,42 +264,70 @@ export const education = [
 ];
 
 export const projects = [
-
   {
     id: 17,
-    title: "YourHR",
-    date: "July 2024",
-    description:
-      "•Developed a full-stack (MERN stack) project named YourHR, connecting job seekers and employers through an intuitive platform. Users can securely log in using JWT-based authentication. The platform includes job listings, application management for job seekers, and applicant management for employers. Users can update their profiles and upload images via Cloudinary. The design is fully responsive for seamless usage across devices.",
+    title: "Ecommerce",
+    date: "Jan 2025",
+    description1:"Product Listing & Search – The platform displays a list of products with images, prices, ratings, and discounts. Users can also search for specific products using the search bar.",
+    description2:"User Authentication & Dashboard – There is a user profile section and a dashboard, suggesting features like user authentication, order tracking, and personalized experiences.",
+    description3:"Filtering & Sorting – The interface includes filtering options for categories and brands, along with sorting functionalities to refine product selection.",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-3dfd0.appspot.com/o/yoourhr1.jpeg?alt=media&token=589e5edc-1010-4d40-afc4-aa7a6a5352f0",
-    tags: ["React Js", "Node JS", "ExpressJS", "MongoDB", "Cloudinary"],
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-3dfd0.appspot.com/o/ecom.jpg?alt=media&token=9a013274-788f-4d08-88e2-e04223311d23",
+    tags: ["React Js","Redux","JWT", "Node JS", "ExpressJS", "Mongodb","Tailwind Css"],
     category: "web app",
-    github: "https://github.com/srinjoy29/YourHR",
-    webapp: "https://yourhr-five.vercel.app/login"
+    github: "https://github.com/srinjoy29/E-commerce",
+    webapp: "https://e-commerce-liart-delta-57.vercel.app/"
+  },
+  {
+    id: 18,
+    title: "RBAC",
+    date: "Nov 2024",
+    description1:"The image shows an RBAC (Role-Based Access Control) System dashboard for managing users, roles, and permissions. The sidebar includes a welcome message for the admin user and a logout button, while the header displays the app title and navigation tabs for Users, Roles, and Permissions, with the Users tab currently active.",
+    description2:"The main content area features a search bar and an Add User button, followed by a table listing user details like name, email, role (admin, editor, viewer), and status (active or inactive). Status is color-coded for clarity (green for active, red for inactive), and action buttons allow the admin to edit or delete users.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-3dfd0.appspot.com/o/WhatsApp%20Image%202025-01-08%20at%2023.17.40_999acfc1.jpg?alt=media&token=08de6b32-4224-466c-8073-0c74c77fe160",
+    tags: ["React Js", "Node JS", "ExpressJS", "MongoDB"],
+    category: "web app",
+    github: "https://github.com/srinjoy29/RBAC-Application.git",
+    webapp: "https://rbac-srinjoy.netlify.app/"
+  },
+  {
+    id: 17,
+    title: "codify",
+    date: "Dec 2024",
+    description1:"The image showcases a web interface for a platform called Codefy, designed for coding, testing, and running code. The layout is divided into two main sections: the left panel highlights the platform branding, and the right panel manages the user’s coding workspace.",
+    description2:"On the left, the Codefy branding features its logo, tagline (“Code. Test. Run.”), and a prominent button labeled “+ Create Code Lab” to initiate a new coding environment. The vibrant design, with a coding-themed background, enhances the aesthetic and conveys the platform's purpose.",
+    description3:"On the right, the My Code Lab section displays a structured workspace. A folder named DSA is shown, with two code lab cards underneath. Each card includes details like the programming language (e.g., C++ and JavaScript), creation date, and icons for editing or deleting the code lab. Options for “+ Create New Folder” and “+ New Code Lab” provide functionality for organizing and adding new projects, creating an intuitive and efficient user experience.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-3dfd0.appspot.com/o/code.jpg?alt=media&token=00b9fa31-c0c8-42f3-b7f4-fa7a848b5511",
+    tags: ["React Js", "Node JS", "ExpressJS", "codemirror","Judge0Api","RapidApi","LocalStorage"],
+    category: "web app",
+    github: "https://github.com/srinjoy29/CODEEDITOR",
+    webapp: "https://codefy-eight.vercel.app/"
+  },
+  {
+    id: 17,
+    title: "CarShowroom",
+    date: "Dec 2024",
+    description1:"The image depicts Own-CarShowroom, a platform designed for users to manage their car collections seamlessly. The header welcomes users with a brief introduction about the platform's functionality, such as tracking vehicles, adding new cars, and managing essential details like name, model, and price. The cheerful pink theme, paired with a red car graphic, adds a friendly touch to the interface.",
+    description2:"A search bar is prominently displayed, allowing users to filter their car collection by attributes like name, model, or price. Next to it, the Add New Car button enables users to expand their collection quickly and conveniently. The layout emphasizes usability and quick access to core features.",
+    description3:" Below the search bar, the platform displays individual car cards showcasing details such as the car's name, model, and a brief description. Sleek car images enhance the visual appeal, making the browsing experience more engaging and intuitive for users.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-3dfd0.appspot.com/o/car.jpg?alt=media&token=31d170f1-8358-4f9b-903a-d4c42fa4a869",
+    tags: ["React Js", "Node JS", "ExpressJS", "Mongodb"],
+    category: "web app",
+    github: "https://github.com/srinjoy29/CarShowroom",
+    webapp: "https://car-showroom-w9uw.vercel.app/"
   },
   
+ 
   {
-    id: 16,
-    title: "MedConnect",
-    date: "July 2024",
-    description:
-      "• Developed a full-stack (MERN stack) project named MedConnect, connecting doctors and patients through an organizational website. Users can sign up, view available doctors, and book appointments. Doctors can join as users, apply to become verified doctors, and get approved by an admin after verification. The platform includes an admin dashboard where admins can manage users, doctors, appointments, and applications, along with notifications for any events. New features include a crypto secure vault where patients can store their prescriptions securely on the blockchain with secure MetaMask payments.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-3dfd0.appspot.com/o/Screenshot%202024-08-01%20073246.png?alt=media&token=7a2f6a3f-7c84-4a8e-a673-d9abdf6c69ee",
-    tags: ["React Js", "Tailwind CSS", "MongoDB", "ExpressJS", "Node JS","Solidity", "Web3"],
-    category: "Web3",
-    github: "https://github.com/srinjoy29/MedConnect-Frontend",
-    webapp: "https://med-connect-frontend-tawny.vercel.app/"
-}
-
-,
-  {
-    id: 15,
+    id: 17,
     title: "Code Fusion",
     date: "May 2024",
     description:
       "Our team was selected from 260 teams for CodeFusion, a collaborative code platform. CodeFusion features a secure Socket.IO chat room for real-time collaboration and interaction with an AI chatbot. It supports over 40 programming languages and tracks time consumed on tasks. The platform offers code review for assessing time and space complexity, efficiency, and optimization. Additionally, it includes a code converter that translates natural language to code and converts code between different programming languages, providing explanations for the changes. ",
+
     image:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-3dfd0.appspot.com/o/CODEFUSION.png?alt=media&token=a8083e01-10ac-4e1b-82a5-2e345ec5e385",
     tags: ["React Js", "Tailwind css", "Firebase", "MongoDB", "ExpressJS","NextJS","Socket.IO"],
@@ -379,6 +409,33 @@ export const projects = [
       },
     ],
   },
+  {
+    id: 16,
+    title: "MedConnect",
+    date: "July 2024",
+    description:
+      "• Developed a full-stack (MERN stack) project named MedConnect, connecting doctors and patients through an organizational website. Users can sign up, view available doctors, and book appointments. Doctors can join as users, apply to become verified doctors, and get approved by an admin after verification. The platform includes an admin dashboard where admins can manage users, doctors, appointments, and applications, along with notifications for any events. New features include a crypto secure vault where patients can store their prescriptions securely on the blockchain with secure MetaMask payments.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-3dfd0.appspot.com/o/Screenshot%202024-08-01%20073246.png?alt=media&token=7a2f6a3f-7c84-4a8e-a673-d9abdf6c69ee",
+    tags: ["React Js", "Tailwind CSS", "MongoDB", "ExpressJS", "Node JS","Solidity", "Web3"],
+    category: "Web3",
+    github: "https://github.com/srinjoy29/MedConnect-Frontend",
+    webapp: "https://med-connect-frontend-tawny.vercel.app/"
+},
+  {
+    id: 18,
+    title: "YourHR",
+    date: "July 2024",
+    description:
+      "•Developed a full-stack (MERN stack) project named YourHR, connecting job seekers and employers through an intuitive platform. Users can securely log in using JWT-based authentication. The platform includes job listings, application management for job seekers, and applicant management for employers. Users can update their profiles and upload images via Cloudinary. The design is fully responsive for seamless usage across devices.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-3dfd0.appspot.com/o/yoourhr1.jpeg?alt=media&token=589e5edc-1010-4d40-afc4-aa7a6a5352f0",
+    tags: ["React Js", "Node JS", "ExpressJS", "MongoDB", "Cloudinary"],
+    category: "web app",
+    github: "https://github.com/srinjoy29/YourHR",
+    webapp: "https://yourhr-five.vercel.app/login"
+  },
+  
   {
     id: 0,
     title: "IRI-S",
@@ -513,9 +570,10 @@ export const projects = [
 
 export const products =[
   {
+    id:1,
     name: "Top HTML Interview Questions",
     price: "0",
-    description: "This is an amazing product that helps you with various tasks efficiently. It is built with high-quality materials and provides excellent performance.",
+    description1: "This is an amazing product that helps you with various tasks efficiently. It is built with high-quality materials and provides excellent performance.",
     tags: ["HTML", "Interview Questions", "Top-Questions"],
     image: "https://nestify.io/wp-content/uploads/2024/01/What-is-HTML.jpg",  // Replace with actual image URL
     buyLink: "https://docs.google.com/document/d/e/2PACX-1vSXtaEVhFO3n3fNXjbHuLTNhMiLFec5Auxzq0dq-p_HuGLGQIyCecDjcHBzbU79Ph8jltC5nSNp1jk0/pub",
@@ -523,19 +581,22 @@ export const products =[
     detailsLink: "https://docs.google.com/document/d/e/2PACX-1vSXtaEVhFO3n3fNXjbHuLTNhMiLFec5Auxzq0dq-p_HuGLGQIyCecDjcHBzbU79Ph8jltC5nSNp1jk0/pub"
   },
   {
-    "name": "Top React.Js Interview Questions",
-    "price": "3",
-    "description": "Essential React JS interview questions covering key topics like component lifecycle, hooks, state management, and performance optimization. Perfect for mastering React concepts and acing technical interviews.\n\nPlan:\n- Top 20 Questions: Free access to the most important React JS questions.\n- Top 50+ React JS Last Moment Revision Questions: Available for just ₹3 to boost your last-minute preparations.",
-    "tags": ["React Js", "Interview Questions", "Top-Questions"],
-    "image": "https://i.ytimg.com/vi/WvtGAoI95bQ/maxresdefault.jpg",
-    "buyLink": "https://topmate.io/srinjoy_das/1386493",
-    "category": "development",
-    "detailsLink": "https://topmate.io/srinjoy_das/1386493"
+    name: "Top 20 React.Js Interview Questions",
+    price: "5",
+    
+    description1:"Top 20 Questions - Download Now Free 👉 Details Link ",
+    description2:"Top 50 Questions - Download Now Just at 5Rs 👉 Buy Link",
+    
+    tags: ["React Js", "Interview Questions", "Top-Questions"],
+    image: "https://i.ytimg.com/vi/WvtGAoI95bQ/maxresdefault.jpg",
+    buyLink: "https://topmate.io/srinjoy_das/1386493",
+    category: "development",
+    detailsLink: "https://drive.google.com/uc?export=download&id=181octQNYuO0GK5AFsFRj0SFVg-IGbzCy"
   },
   {
     name: "Top Oops Interview Questions",
     price: "0",
-    description: "Master the core concepts of Object-Oriented Programming with these top OOP interview questions. Covering key topics like inheritance, polymorphism, encapsulation, and abstraction. Perfect for demonstrating your understanding of OOP principles. Ideal for excelling in technical interviews and securing your dream job.",
+    description1: "Master the core concepts of Object-Oriented Programming with these top OOP interview questions. Covering key topics like inheritance, polymorphism, encapsulation, and abstraction. Perfect for demonstrating your understanding of OOP principles. Ideal for excelling in technical interviews and securing your dream job.",
     tags: ["Object-Oriented-Programming-Language", "Interview Questions", "Top-Questions"],
     image: "https://miro.medium.com/v2/resize:fit:600/0*7zMicw-FfThCbN35.png",  // Replace with actual image URL
     buyLink: "https://docs.google.com/document/d/e/2PACX-1vRPsMWvG9q_UN3GNyL0dvwsdOSt9w66cFWjfamaMgyXLKYz5boSgg3kUvLAcl_tuaGb8keEchj5l_Ga/pub",
@@ -544,7 +605,7 @@ export const products =[
   {
     name: "Top HR Interview Questions",
     price: "0",
-    description: "Prepare for your HR interview with these top questions, covering key topics like teamwork, leadership, problem-solving, and career goals. Perfect for showcasing your communication and interpersonal skills. Gain confidence in handling behavioral and situational questions. Ideal for acing HR rounds and securing your desired role.",
+    description1: "Prepare for your HR interview with these top questions, covering key topics like teamwork, leadership, problem-solving, and career goals. Perfect for showcasing your communication and interpersonal skills. Gain confidence in handling behavioral and situational questions. Ideal for acing HR rounds and securing your desired role.",
     tags: ["HTML", "Interview Questions", "Top-Questions"],
     image: "https://bugspotter.in/wp-content/uploads/2024/11/Purple-Colorful-Modern-Clean-Project-Management-Flowchart-Brainstorm-1140x570.webp",  // Replace with actual image URL
     buyLink: "https://docs.google.com/document/d/e/2PACX-1vRoa6S4zTsiLDrcCW7TX51vIL6eAmgaX2wZ0KtK3-e7bC4MsYugYvuY31WKfrn-bZ-HRGvXO0vtBFc8/pub",

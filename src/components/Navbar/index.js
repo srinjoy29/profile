@@ -80,6 +80,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           <GitHubButton href={Bio.github} target="_blank">
             Github
           </GitHubButton>
+          <GitHubButton href={Bio.call} target="_blank">
+            Schedule Call
+          </GitHubButton>
           {/* Slide Toggle Button */}
           <div
             style={{
@@ -156,7 +159,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                   Projects
                 </MobileLink>
                 <MobileLink
-                  href="/products"
+                  href="#products"
                   onClick={() => {
                     setIsOpen(!isOpen);
                   }}
