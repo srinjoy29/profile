@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import _default from '../../themes/default';
 
 export const Nav = styled.div`
-    background-color: ${({theme}) => theme.card_light};
+    background-color: ${({ theme }) => theme.nav_color};  // Use theme.nav_color to handle the navbar color
     height: 80px;
     display: flex;
     align-items: center;
@@ -12,10 +12,14 @@ export const Nav = styled.div`
     position: sticky;
     top: 0;
     z-index: 10;
+    transition: background-color 0.8s ease; // Smooth transition for color change
     @media (max-width: 960px) {
-        trastion: 0.8s all ease;
+        transition: 0.8s all ease;
     }
 `;
+
+
+
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -97,12 +101,14 @@ export const GitHubButton = styled.a`
 `;
 
 export const ButtonContainer = styled.div`
-  width: 80%;  
+  width: 80%;
   height: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
-  padding: 0 6px;
+  gap: 8px; /* Add space between the buttons */
+  padding: 0 8px;
+  margin-left: 4px; /* Fixed CSS property syntax */
   @media screen and (max-width: 768px) {
     display: none;
   }

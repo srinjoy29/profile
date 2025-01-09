@@ -6,6 +6,7 @@ export const darkTheme = {
     text_secondary:"#b1b2b3",
     card:"#171721",
     card_light: '#191924',
+    nav_color:'#191924', // Light color for navbar in dark theme
     button:"#854CE6",
     white:"#FFFFFF",
     black:"#000000",
@@ -18,5 +19,6 @@ export const lightTheme = {
     text_primary:"#111111",
     text_secondary:"#48494a",
     card:"#FFFFFF",
+    nav_color:'#eedaf5', // Lighter color for navbar in light theme
     button:"#5c5b5b",
 }
